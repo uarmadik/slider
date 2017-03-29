@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.slider-wrap {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#slider {
+	
+	border: 5px solid #eaeaea;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+	overflow: visible;
+	position: relative;
+	height: 555px;
+	width: 100%;
+	
+}
+
+	#mask {
+		overflow: hidden;
+		height: 545px;
+	}
+
+		#slider ul {
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		#slider li {
+			width: auto;
+			height: 600px;
+			position: absolute;
+			top: -600px;
+			list-style-type: none;
+		}
+
+		#slider li.first-animation {
+				-o-animation: cycle 20s linear infinite;
+				-moz-animation: cycle 20s linear infinite;
+				-webkit-animation: cycle 20s linear infinite;
+			animation: cycle 20s linear infinite;
+		}
+
+		#slider li.second-animation {
+				-o-animation: cycle-two 20s linear infinite;
+				-moz-animation: cycle-two 20s linear infinite;
+				-webkit-animation: cycle-two 20s linear infinite;
+			animation: cycle-two 20s linear infinite;
+		}
+
+		#slider li.third-animation {
+				-o-animation: cycle-three 20s linear infinite;
+				-moz-animation: cycle-three 20s linear infinite;
+				-webkit-animation: cycle-three 20s linear infinite;
+			animation: cycle-three 20s linear infinite;
+		}
+
+		#slider li.fourth-animation {
+				-o-animation: cycle-four 20s linear infinite;
+				-moz-animation: cycle-four 20s linear infinite;
+				-webkit-animation: cycle-four 20s linear infinite;
+			animation: cycle-four 20s linear infinite;
+		}
+
+/* Animation */
+
+@keyframes cycle {
+	0% { top: 0; }
+	5% { top: 0; }
+	20% { top: 0; opacity: 1; z-index: 0; }
+	25% { top:  550px; opacity: 0; z-index: 0;}
+	26% { top: -550px; opacity: 0; z-index: -1; }
+	95% { top: -550px; opacity: 0; z-index: 0; }
+	100% { top: 0; opacity: 1; }
+}
+
+@keyframes cycle-two {
+	0% { top: -550px; opacity: 0; }
+	20% { top: -550px; opacity: 0; }
+	25% { top: 0; opacity: 1; }
+	30% { top: 0; opacity: 1; }
+	45% { top: 0; opacity: 1; z-index: 0; }
+	50% { top: 550px; opacity: 0; z-index: 0; }
+	51% { top: -550px; opacity: 0; z-index: -1; }
+	100% { top: -550px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cycle-three {
+	0% { top: -550px; opacity: 0; }
+	45% { top: -550px; opacity: 0; }
+	50% { top: 0; opacity: 1; }
+	55% { top: 0; opacity: 1; }
+	70% { top: 0; opacity: 1; z-index: 0; }
+	75% { top: 550px; opacity: 0; z-index: 0; }
+	76% { top: -550px; opacity: 0; z-index: -1; }
+	100% { top: -550px; opacity: 0; z-index: -1; }
+
+}
+
+@keyframes cycle-four {
+	0% { top: -550px; opacity: 0; }
+	70% { top: -550px; opacity: 0; }
+	75% { top: 0; opacity: 1; }
+	80% { top: 0; opacity: 1; }
+	95% { top: 0; opacity: 1; z-index: 0; }
+	100% { top: 550px; opacity: 0; z-index: 0; }
+	
+}
+
+/* /Animation */
+
+
+/* media */
+
+
+
+/* /media */
